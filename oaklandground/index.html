@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOAK_GND Tracking Assist</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking to external CSS file -->
+</head>
+<body>
+    <input style="width:300px; margin-bottom: 10px;" type="text" id="search-input" placeholder="Search by callsign..." aria-label="Search for callsign" autocomplete="off">
+
+
+    <table id="atcTable">
+        <thead>
+            <tr>
+                <th>Callsign</th>
+                <th>Runway/Action</th>
+                <th>ATIS</th>
+                <th>Cleared</th>
+                <th>Is Taxiing</th>
+                <th>Handed Off</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be inserted here -->
+        </tbody>
+    </table>
+
+    <p id="noRecordsMessage">No records created.</p>
+
+    <div class="buttons-container">
+        <button class="new-record-btn" onclick="addRecord()">Add New Record</button>
+        <button class="delete-all-btn" onclick="confirmDeleteAll()">Delete All</button>
+    </div>
+    
+    <p id="slightInvisText">Version 0.1.1</p>
+
+    <script src="core.js"></script> <!-- Linking to external JS file -->
+</body>
+</html>
